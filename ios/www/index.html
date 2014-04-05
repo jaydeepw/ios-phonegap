@@ -1,43 +1,129 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	<title>Starter Template</title>
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- Add custom CSS here -->
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand"><a href="#">App Name</a></li>
+				<li><h3><a id="item1" href="#">Item1</a></h3></li>
+				<li><h3><a id="item2" href="#">Item2</a></h3></li>
+				<li><h3><a id="item3" href="#">Item3</a></h3></li>
+			</ul>
+		</div>
+
+		<!-- Page content -->
+		<div id="page-content-wrapper">
+			<div class="content-header">
+				<h1>
+					<a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-align-justify"></i></a>
+					Salary Calculator
+				</h1>
+			</div>
+			<!-- Keep all page content within the page-content inset div! -->
+			<div id="page-content" class="page-content inset">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="lead">A simple salary calculator application for my HR friends.</p>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">Current CTC</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="currentSalary" placeholder="400000">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword" class="col-sm-2 control-label">Expected CTC</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="expectedSalary" placeholder="600000">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">Hike:</label>
+						<label class="col-sm-2 control-label" id="hike"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">% Hike:</label>
+						<label class="col-sm-2 control-label" id="percentHike"></label>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword" class="col-sm-2 control-label">Take home(incl. taxes)</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="takeHome" placeholder="50000">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- JavaScript -->
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/calculator.js"></script>
+
+	<!-- Custom JavaScript for the Menu Toggle -->
+	<script>
+
+		/*$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("active");
+	});
+
+	$("#item1").click(function(e) {
+		e.preventDefault();
+		$("#item1-data").show();
+		$("#item2-data").hide();
+		$("#item3-data").hide();
+
+		$("#wrapper").removeClass("active");
+	});
+
+	$("#item2").click(function(e) {
+		e.preventDefault();
+		$("#item1-data").hide();
+		$("#item2-data").show();
+		$("#item3-data").hide();
+
+		$("#wrapper").removeClass("active");
+	});
+
+	$("#item3").click(function(e) {
+		e.preventDefault();
+		$("#item1-data").hide();
+		$("#item2-data").hide();
+		$("#item3-data").show();
+
+		$("#wrapper").removeClass("active");
+	});
+
+	$("#page-content").click(function(e) {
+		e.preventDefault();
+
+		$("#wrapper").removeClass("active");
+	});*/
+
+	</script>
+</body>
 </html>
